@@ -1,0 +1,182 @@
+Ques1- What is a database explain with an example on why should we need a database?
+
+Ans:  Database is a organized collection of information , which store information and provide      features to  retrieve information for future use . For eg: A company has N no of employes for  M no of roles and they have to handle the data of their name map with their role so it is impossible to handle a data in files and spreadsheet it value of N and M is so large, So they need a  database which make this process easier.
+
+Why should we need a database:
+
+1. Easy handling : it can handle a large data set very easiy .
+
+2. privacy : database provide a feature who can access this data by which privacy is increase.
+
+3. No error : No mixing of data and no loss of information.
+
+
+Ques2- Write a short note on  file based storage system. Explain the major challenges of a file based storage system?
+
+Ans: File storage—also called file-level or file-based storage is a traditional method of a hierarchical storage methodology used to organize and store data in form of files on a computer.
+
+Major challenges of a file based storage system are :
+
+1. Data Redundancy: In a file-based system, the same data might be dulicated in multile files. This redundancy can lead to inconsistencies and inefficiencies, as changes to one copy of the data may not be reflected in others.
+
+2. Data Isolation: Each application tyically has its own set of files, and sharing data between applications can be challenging. This isolation can hinder collaboration and make it difficult to maintain a unified view of the data across the organization.
+
+3. Low efficiency : Hierarchical file storage works well with easily organized amounts of structured data. But, as the number of files grows, the file retrieval process can become time-consuming.
+
+4. Limited Data Integrity: File-based systems often lack built-in mechanisms to enforce data integrity. Without roer constraints, there is a risk of entering inaccurate or invalid data, which can comromise the reliability of the information stored.
+
+
+Ques3- What is DBMS? What as the need for DBMS?
+
+Ans: DBMS stands for Database Management System. It's a software system that enables users to define, create, maintain, and control access to databases. Essentially, it's a suite of programs that allows users to store, modify, extract, and analyze information from a database.
+
+The need for DBMS arises from several factors:
+
+1. Data Organization: DBMS provides a systematic and structured way to organize data. It allows data to be stored in tables, which can be linked together based on relationships, making it easier to manage and retrieve information.
+
+2. Data Integrity: DBMS ensures data integrity by enforcing rules and constraints on the data stored in the database. This helps in maintaining the accuracy and consistency of the data.
+
+3. Data Security: DBMS provides security features such as authentication, authorization, and encryption to protect the database from unauthorized access and ensure that only authorized users can manipulate the data.
+
+4. Concurrency Control: In multi-user environments, DBMS ensures that multiple users can access and manipulate the data simultaneously without interfering with each other's work. It manages concurrency control to prevent data corruption and maintain consistency.
+
+5. Data Recovery: DBMS provides mechanisms for data backup and recovery in case of system failures or disasters. It allows users to restore the database to a previous consistent state in case of data loss.
+
+6. Data Abstraction and Independence: DBMS provides a layer of abstraction between the physical storage of data and the applications accessing it. This allows applications to interact with the data using high-level queries and commands, without needing to know the underlying details of how the data is stored.
+
+
+Ques4- Explain 5 challenges of file-based storage system which was tackled by DBMS?
+
+Ans: There are the challenges of file-based storage systems tackled by Database Management Systems (DBMS) :
+
+1. Data Redundancy and Inconsistency: DBMS centralizes data storage, reducing redundancy and ensuring data consistency through normalization.
+
+2. Data Isolation: DBMS provides a centralized repository for data storage, enabling multiple applications to access and manipulate the same data concurrently, eliminating data isolation.
+
+3. Data Integrity: DBMS enforces data integrity constraints using features like constraints, triggers, and referential integrity rules to prevent data corruption and maintain consistency.
+
+4. Concurrent Access and Security: DBMS offers concurrency control mechanisms to manage simultaneous data access and security features such as authentication, authorization, and encryption to protect the database from unauthorized access and breaches.
+
+6. Data Independence: DBMS introduces a layer of abstraction between the physical data storage and applications, allowing changes to the database schema without affecting applications, promoting data independence and facilitating system maintenance and evolution.
+
+
+Ques5- List Out the different types of classification in DBMS and explain?
+
+Ans: In Database Management Systems (DBMS), databases can be classified based on different criteria. Here are some common types of classifications:
+A. Based on Data Model:
+1. Relational Databases: Organize data into tables with rows and columns. Examples include MySQL, PostgreSQL, and Oracle Database.
+
+2. NoSQL Databases: Do not use the traditional tabular relational model. Can be document-oriented, key-value stores, graph databases, etc. Examples include MongoDB, Redis, and Neo4j.
+
+B. Based on Structure:
+
+1. Structured Databases: Data is organized in a predefined structure, such as tables in relational databasesp
+
+2. Unstructured Databases: Data is not organized in a pre-defined manner, allowing for flexibility in data storage.
+
+C. Based on Accessibility:
+
+1. Centralized Databases: Data is stored in a single location, and access is controlled from that central pointp.
+
+2. Distributed Databases: Data is distributed across multiple locations or serers. Allows for better scalability
+and fault tolerance.
+
+D. Based on Content:
+
+1.  Document-oriented Databases: Store data as documents (e.g., JSON or XML). Suitable for semi-structured data.
+2. Graph Databases: Focus on relationships between data entities. Suitable for scenarios inoling complex relationships.
+
+E. Based on Application:
+
+1. Operational Databases: Used for day-to-day operations of an organization. Optimized for read and write operations.
+2. Analytical Databases: Used for complex queries and data analysis. Optimized for read-intensie operations.
+
+F. Based on Usage:
+
+1. Online transaction Processing (OLTP) Databases: Designed for transactional processing and support high-volume, real-time transactions.
+
+2. Online Analytical Processing (O(AP) Databases: Designed for complex queries and reporting, supporting data analysis and decision-making.
+
+G. Based on ReLationships:
+
+1. Relational Databases: Represent relationships between data entities using tables and keys.
+
+2. Hierarchica" Databases: Organize data in a tree-like structure, suitable for representing parent-child relationships.
+
+3. Network Databases: Represent data using a more complex network model, allowing many-to-many relationships.
+
+H. Based on DepLoyment:
+
+1. On-Premises Databases: Installed and operated from an organization's in-house server and computing infrastructure.
+
+2. Cloud Databases: Hosted on cloud platforms, providing scalability, flexibility, and accessibility from anywhere with an internet connection.
+
+Ques6-  What is the significance of Data Modelling and explain the types of Data Modelling?
+
+Ans: 
+Certainly. Data modeling is significant as it provides a structured approach to representing real-world entities and their relationships within a database. It serves as a blueprint for designing and implementing databases, ensuring data accuracy, consistency, and efficiency.
+
+1. Conceptual Data Modeling:
+Conceptual data modeling focuses on identifying high-level concepts and relationships without delving into specific implementation details. It helps stakeholders understand business requirements and the semantics of the data. This type of modeling is typically represented using Entity-Relationship Diagrams (ERDs), illustrating entities, attributes, and relationships.
+
+2. Logical Data Modeling: Logical data modeling translates the conceptual model into a detailed representation reflecting the structure of the data within the database. It defines entities, attributes, relationships, and constraints in a database-independent manner. Logical data modeling aims to create a schema that can be implemented in various database management systems (DBMS) and often involves techniques such as normalization to ensure data integrity.
+
+3. Physical Data Modeling: Physical data modeling specifies how the logical data model will be implemented in a specific DBMS. It involves defining physical storage structures such as tables, indexes, and partitions, considering performance, scalability, and optimization techniques. Physical data modeling provides details on data types, constraints, and other database-specific features.
+
+4. Dimensional Data Modeling: Dimensional data modeling is primarily used in data warehousing and decision support systems for analytical purposes. It focuses on organizing data into dimensions and measures to facilitate analysis and reporting. Techniques like star schema and snowflake schema are used to structure data for efficient OLAP queries, promoting data aggregation and query performance for business intelligence applications.
+
+
+Ques7- Explain 3 schema architecture along with its advantages ?
+
+Ans: The Three-Schema Architecture, also known as the ANSI/SPARC architecture, is a framework for understanding the structure and organization of database systems. It consists of three levels of abstraction: the external schema, the conceptual schema, and the internal schema.
+
+1. External Schema:
+
+1. The external schema, also referred to as the view level, represents the part of the database that is relevant to individual users or applications.
+
+2. Each external schema defines the way data is viewed and accessed by a particular user or application, providing a customized and simplified view of the database.
+
+Advantages:
+
+1. Data Independence: External schemas provide a layer of abstraction that shields users and applications from changes made to the underlying database structure. Users can continue to interact with the database using their predefined views even if the database schema changes.
+
+2. Customization: External schemas allow different users or applications to have tailored views of the database, presenting only the data that is relevant to their specific needs. This enhances usability and facilitates efficient data retrieval.
+
+3. Security: External schemas can be used to enforce access controls, limiting users' access to only the data they are authorized to view or manipulate.
+
+2. Conceptual Schema:
+
+1. The conceptual schema, also known as the logical level, represents the overall logical structure of the entire database.
+
+2. It defines the entities, attributes, relationships, and constraints that form the conceptual model of the database, independent of any specific implementation considerations.
+
+Advantages:
+
+1. Data Integration: The conceptual schema provides a unified and integrated view of the entire database, consolidating data from various external schemas into a coherent structure. This facilitates data integration and ensures consistency across different views of the database.
+
+2. Data Independence: Changes to the external schema or internal schema do not affect the conceptual schema, promoting data independence and allowing modifications to be made to the database without impacting users or applications.
+
+3. Database Design: The conceptual schema serves as a blueprint for database design, guiding the process of defining tables, relationships, and constraints during the database development phase.
+
+3. Internal Schema:
+
+1. The internal schema, also known as the physical level, represents the physical storage and organization of data within the database system.
+
+2. It describes how data is stored on the storage devices such as disks and how it is indexed and accessed by the database management system (DBMS).
+
+Advantages:
+
+1. Performance Optimization: The internal schema allows database administrators to optimize storage structures, access paths, and indexing techniques to improve performance and efficiency. This includes decisions regarding data placement, storage allocation, and indexing strategies based on the specific requirements of the DBMS and underlying hardware.
+
+2. Data Security: The internal schema includes mechanisms for implementing security features such as encryption, access controls, and auditing to protect data stored within the database from unauthorized access or manipulation.
+
+3. Data Integrity: By defining storage structures and access methods at the internal schema level, data integrity can be enforced through constraints, validation rules, and integrity checks to ensure the accuracy and consistency of the data stored in the database.
+
+
+
+
+
+
+
+
+
